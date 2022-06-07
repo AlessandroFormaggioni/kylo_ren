@@ -1,0 +1,28 @@
+#!/usr/bin/env eCLIP_full_IDR_pipeline_1input_scatter_singleNode
+
+species: hg19
+samples:
+  - 
+    - name: "rep1"
+      ip_bam: 
+        class: File
+        path: ../case/ENCLB778RFV_SR_CP.bam
+      input_bam:
+        class: File
+        path: ../control/ENCLB373HPU_SR_CP.bam
+      peak_clusters:
+        class: File
+        path: ENCLB778RFV_clipper.bed
+    - name: "rep2"
+      ip_bam: 
+        class: File
+        path: ../case/ENCLB893EAL_SR_CP.bam
+      input_bam:
+        class: File
+        path: ../control/ENCLB373HPU_SR_CP.bam
+      peak_clusters:
+        class: File
+        path: ENCLB893EAL_clipper.bed
+chrom_sizes:
+  class: File
+  path: ../case/chrNameLength.txt 
