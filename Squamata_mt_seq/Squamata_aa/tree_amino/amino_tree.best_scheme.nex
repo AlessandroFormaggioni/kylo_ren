@@ -1,0 +1,10 @@
+#nexus
+begin sets;
+  charset p1_aln_aa_ATP6_p2_aln_aa_ATP8_p7_aln_aa_NADH1_p8_aln_aa_NADH2_p9_aln_aa_NADH3_p10_aln_aa_NADH4_p11_aln_aa_NADH4L_p12_aln_aa_NADH5 = 1-227  228-284  1751-2076  2077-2426  2427-2549  2550-3025  3026-3123  3124-3740;
+  charset p3_aln_aa_COX1_p4_aln_aa_COX2_p5_aln_aa_COX3_p6_aln_aa_CYTB = 285-873  874-1105  1106-1366  1367-1750;
+  charset p13_aln_aa_NADH6 = 3741-3922;
+  charpartition mymodels =
+    mtVer+F+R6: p1_aln_aa_ATP6_p2_aln_aa_ATP8_p7_aln_aa_NADH1_p8_aln_aa_NADH2_p9_aln_aa_NADH3_p10_aln_aa_NADH4_p11_aln_aa_NADH4L_p12_aln_aa_NADH5,
+    mtVer+I+R5: p3_aln_aa_COX1_p4_aln_aa_COX2_p5_aln_aa_COX3_p6_aln_aa_CYTB,
+    mtVer+F+R5: p13_aln_aa_NADH6;
+end;

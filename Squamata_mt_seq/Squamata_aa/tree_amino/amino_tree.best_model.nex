@@ -1,0 +1,10 @@
+#nexus
+begin sets;
+  charset p1_aln_aa_ATP6_p2_aln_aa_ATP8_p7_aln_aa_NADH1_p8_aln_aa_NADH2_p9_aln_aa_NADH3_p10_aln_aa_NADH4_p11_aln_aa_NADH4L_p12_aln_aa_NADH5 = AA, 1-227  228-284  1751-2076  2077-2426  2427-2549  2550-3025  3026-3123  3124-3740;
+  charset p3_aln_aa_COX1_p4_aln_aa_COX2_p5_aln_aa_COX3_p6_aln_aa_CYTB = AA, 285-873  874-1105  1106-1366  1367-1750;
+  charset p13_aln_aa_NADH6 = AA, 3741-3922;
+  charpartition mymodels =
+    mtVer+F+R6{0.188841,0.0168078,0.164671,0.164692,0.227367,0.490302,0.239743,1.22637,0.153965,2.66027,0.0254127,6.08463}: p1_aln_aa_ATP6_p2_aln_aa_ATP8_p7_aln_aa_NADH1_p8_aln_aa_NADH2_p9_aln_aa_NADH3_p10_aln_aa_NADH4_p11_aln_aa_NADH4L_p12_aln_aa_NADH5{16.2374},
+    mtVer+I{0.239786}+R5{0.259755,0.136214,0.224599,0.540868,0.183227,1.71839,0.0825821,4.92397,0.0100511,12.1035}: p3_aln_aa_COX1_p4_aln_aa_COX2_p5_aln_aa_COX3_p6_aln_aa_CYTB{7.46892},
+    mtVer+F+R5{0.216925,0.0732739,0.225652,0.313841,0.378434,1.0159,0.121349,2.22426,0.0576399,4.49211}: p13_aln_aa_NADH6{32.6511};
+end;

@@ -1,0 +1,380 @@
+IQ-TREE multicore version 2.2.5 COVID-edition for Linux 64-bit built Sep 15 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    SGBGA-D142238S (AVX512, FMA3, 723 GB RAM)
+Command: iqtree -s concatenated.out -sp partitions.txt -m TESTNEWMERGE -B 1000 --prefix amino_tree -nt AUTO -msub mitochondrial -st AA
+Seed:    90632 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Dec 23 22:30:46 2023
+Kernel:  AVX+FMA - auto-detect threads (64 CPU cores detected)
+
+Reading partition model file partitions.txt ...
+Reading alignment file concatenated.out ... Fasta format detected
+Reading fasta file: done in 0.00766542 secs using 91.59% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00883528 secs using 4279% CPU
+Alignment has 57 sequences with 3922 columns, 3096 distinct patterns
+2505 parsimony-informative, 349 singleton sites, 1068 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0116042 secs using 5416% CPU
+   1  Anolis_carolinensis_1             3.82%    passed     19.60%
+   2  Anolis_sagrei_1                   4.13%    passed      8.65%
+   3  Arizona_elegans_1                 6.65%    failed      2.11%
+   4  Aspidocelis_tigris_1              5.58%    passed     97.09%
+   5  Aspidoscelis_marmoratus_1         4.54%    passed     86.09%
+   6  Azemiops_feae_1                   4.21%    passed     89.35%
+   7  Boaedon_fuliginosus_1             6.32%    passed      5.72%
+   8  Bothrops_jararaca_1               4.16%    passed     95.54%
+   9  Bungarus_multicintus_1            6.43%    passed     62.25%
+  10  Charina_bottae_1                  5.53%    passed     56.47%
+  11  Crotalus_tigris_1                13.00%    passed     97.47%
+  12  Cryptoblepharus_egeriae_1         4.08%    failed      0.30%
+  13  Ctenosaura_bakeri_1              12.47%    passed     20.11%
+  14  Cyclura_pinguis_1                 3.65%    passed     91.50%
+  15  Daboia_siamensis_1               14.20%    passed     23.27%
+  16  Diadophis_punctatus_1             6.25%    passed     69.57%
+  17  Elgaria_multicarinata_1           4.54%    passed     49.37%
+  18  Eublepharis_macularius_1          3.80%    passed     34.51%
+  19  Gekko_japonicus_1                 4.21%    failed      4.54%
+  20  Hemicordylus_capensis_1           4.41%    passed     98.41%
+  21  Iguana_delicatissima_1            3.98%    passed     54.21%
+  22  Imantodes_cenchoa_1               4.44%    passed     10.83%
+  23  Lacerta_agilis_1                  3.62%    passed     39.72%
+  24  Lacerta_bilineata_1               3.70%    passed     61.30%
+  25  Lacerta_viridis_1                 3.72%    passed     75.58%
+  26  Laticauda_colubrina_1             4.46%    passed     58.28%
+  27  Lepidodactylus_listeri_1          3.44%    failed      0.89%
+  28  Lerista_edwardsae_1               4.21%    passed     66.85%
+  29  Morelia_viridis_1                 5.51%    passed     94.80%
+  30  Myanophis_thanlyinensis_1         4.31%    passed     83.44%
+  31  Naja_naja_1                       4.54%    passed     88.39%
+  32  Ophiophagus_hannah_1              4.36%    passed     38.98%
+  33  Pantherophis_guttatus_1           5.00%    failed      3.23%
+  34  Paroedura_picta_1                 4.21%    failed      0.28%
+  35  Phrynocephalus_versicolor_1       4.56%    failed      0.00%
+  36  Phrynosoma_blainvillii_1          3.70%    passed     99.43%
+  37  Phrynosoma_platyrhinos_1          3.85%    passed     96.54%
+  38  Pituophis_catenifer_1             4.59%    failed      1.12%
+  39  Plestiodon_gilberti_1            16.68%    passed      9.00%
+  40  Podarci_raffonei_1                5.30%    passed     88.02%
+  41  Podarcis_muralis_1                3.65%    passed     59.81%
+  42  Pogona_vitticeps_1                4.31%    passed     35.87%
+  43  Protobothrops_mucrosquamatus_1    4.18%    passed     97.69%
+  44  Ptyas_mucosa_1                    4.61%    failed      0.85%
+  45  Salvator_merianae_1               6.86%    passed     90.61%
+  46  Sceloporus_occidentalis_1         3.67%    passed     94.31%
+  47  Sceloporus_tristichus_1           4.26%    passed     93.66%
+  48  Shinisaurus_crocodilurus_1        3.77%    passed     67.93%
+  49  Sphaerodactylus_townsendi_1       3.60%    failed      0.00%
+  50  Sphenodon_punctatus_1             3.47%    passed     65.44%
+  51  Thamnophis_elegans_1             20.83%    passed     45.53%
+  52  Thermophis_baileyi_1              4.33%    passed     71.41%
+  53  Tropidonophis_doriae_1            5.66%    passed     64.92%
+  54  Varanus_komodoensis_1            14.86%    passed     16.46%
+  55  Varanus_salvator_1                3.62%    passed     11.61%
+  56  Vipera_latastei_1                23.64%    passed     79.92%
+  57  Zootoca_vivipara_1                3.57%    passed     97.10%
+****  TOTAL                             5.95%  10 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 13 partitions...
+Identifying sites to remove: done in 0.000402847 secs using 99.05% CPU
+Identifying sites to remove: done in 0.000154963 secs using 98.73% CPU
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	57	227	161	53	TESTNEWMERGE	p1_aln_aa_ATP6
+2	AA	57	57	50	7	TESTNEWMERGE	p2_aln_aa_ATP8
+3	AA	57	589	204	310	TESTNEWMERGE	p3_aln_aa_COX1
+4	AA	57	232	147	70	TESTNEWMERGE	p4_aln_aa_COX2
+5	AA	57	261	132	107	TESTNEWMERGE	p5_aln_aa_COX3
+6	AA	57	384	232	115	TESTNEWMERGE	p6_aln_aa_CYTB
+7	AA	55	326	196	100	TESTNEWMERGE	p7_aln_aa_NADH1
+8	AA	57	350	277	40	TESTNEWMERGE	p8_aln_aa_NADH2
+9	AA	56	123	77	40	TESTNEWMERGE	p9_aln_aa_NADH3
+10	AA	57	476	329	101	TESTNEWMERGE	p10_aln_aa_NADH4
+11	AA	57	98	83	9	TESTNEWMERGE	p11_aln_aa_NADH4L
+12	AA	57	617	462	103	TESTNEWMERGE	p12_aln_aa_NADH5
+13	AA	57	182	155	13	TESTNEWMERGE	p13_aln_aa_NADH6
+Degree of missing data: 0.003
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.081 seconds
+Measuring multi-threading efficiency up to 64 CPU cores
+Increase to 10 rounds for branch lengths
+16 trees examined
+Threads: 1 / Time: 64.182 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -223304
+Threads: 2 / Time: 32.200 sec / Speedup: 1.993 / Efficiency: 100% / LogL: -223304
+Threads: 3 / Time: 21.233 sec / Speedup: 3.023 / Efficiency: 101% / LogL: -223304
+Threads: 4 / Time: 16.474 sec / Speedup: 3.896 / Efficiency: 97% / LogL: -223304
+Threads: 5 / Time: 14.002 sec / Speedup: 4.584 / Efficiency: 92% / LogL: -223304
+Threads: 6 / Time: 11.633 sec / Speedup: 5.517 / Efficiency: 92% / LogL: -223304
+Threads: 7 / Time: 10.671 sec / Speedup: 6.014 / Efficiency: 86% / LogL: -223304
+Threads: 8 / Time: 10.670 sec / Speedup: 6.015 / Efficiency: 75% / LogL: -223304
+Threads: 9 / Time: 10.816 sec / Speedup: 5.934 / Efficiency: 66% / LogL: -223304
+Threads: 10 / Time: 10.579 sec / Speedup: 6.067 / Efficiency: 61% / LogL: -223304
+Threads: 11 / Time: 10.743 sec / Speedup: 5.974 / Efficiency: 54% / LogL: -223304
+Threads: 12 / Time: 10.652 sec / Speedup: 6.025 / Efficiency: 50% / LogL: -223304
+Threads: 13 / Time: 10.817 sec / Speedup: 5.934 / Efficiency: 46% / LogL: -223304
+Determining AUTO threadcount: done in 234.69 secs using 359.7% CPU
+BEST NUMBER OF THREADS: 7
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.7988 secs using 693.3% CPU
+Estimate model parameters (epsilon = 1.000)
+Partition p7_aln_aa_NADH1 / Model: LG+I+G4 / df: 109 / LogL: -10039.307
+Partition p10_aln_aa_NADH4 / Model: LG+I+G4 / df: 113 / LogL: -19572.073
+Partition p1_aln_aa_ATP6 / Model: LG+I+G4 / df: 113 / LogL: -9976.232
+Partition p8_aln_aa_NADH2 / Model: LG+I+G4 / df: 113 / LogL: -18627.424
+Partition p4_aln_aa_COX2 / Model: LG+I+G4 / df: 113 / LogL: -6285.670
+Partition p3_aln_aa_COX1 / Model: LG+I+G4 / df: 113 / LogL: -8601.104
+Partition p11_aln_aa_NADH4L / Model: LG+I+G4 / df: 113 / LogL: -4773.732
+Partition p13_aln_aa_NADH6 / Model: LG+I+G4 / df: 113 / LogL: -10256.161
+Partition p2_aln_aa_ATP8 / Model: LG+I+G4 / df: 113 / LogL: -4690.109
+Partition p6_aln_aa_CYTB / Model: LG+I+G4 / df: 113 / LogL: -12394.812
+Partition p5_aln_aa_COX3 / Model: LG+I+G4 / df: 113 / LogL: -6459.862
+Partition p9_aln_aa_NADH3 / Model: LG+I+G4 / df: 111 / LogL: -4773.317
+Partition p12_aln_aa_NADH5 / Model: LG+I+G4 / df: 113 / LogL: -30549.320
+Optimal log-likelihood: -146999.124
+Time for fast ML tree search: 3.121 seconds
+
+NOTE: ModelFinder requires 235 MB RAM!
+Selecting individual models for 13 charsets using BIC...
+Full partition model BIC score: 295537.706 (LnL: -140694.278  df:1710)
+Merging models to increase model fit (about 157 total partition schemes)...
+ Finished subset 5/78     6.410  percent done     0h:0m:4s (0h:0m:48s left)      Finished subset 3/78     3.846  percent done     0h:0m:4s (0h:0m:45s left)      Finished subset 4/78     5.128  percent done     0h:0m:5s (0h:0m:45s left)      Finished subset 6/78     7.692  percent done     0h:0m:5s (0h:0m:45s left)      Finished subset 2/78     2.564  percent done     0h:0m:5s (0h:0m:42s left)      Finished subset 1/78     1.282  percent done     0h:0m:6s (0h:0m:45s left)      Finished subset 0/78     0.000  percent done     0h:0m:6s (0h:0m:46s left)      Finished subset 9/78     11.538  percent done     0h:0m:7s (0h:0m:51s left)      Finished subset 7/78     8.974  percent done     0h:0m:8s (0h:0m:50s left)      Finished subset 11/78     14.103  percent done     0h:0m:8s (0h:0m:51s left)      Finished subset 8/78     10.256  percent done     0h:0m:9s (0h:0m:51s left)      Finished subset 10/78     12.821  percent done     0h:0m:9s (0h:0m:50s left)      Finished subset 13/78     16.667  percent done     0h:0m:9s (0h:0m:50s left)      Finished subset 12/78     15.385  percent done     0h:0m:10s (0h:0m:49s left)      Finished subset 15/78     19.231  percent done     0h:0m:10s (0h:0m:49s left)      Finished subset 14/78     17.949  percent done     0h:0m:11s (0h:0m:49s left)      Finished subset 16/78     20.513  percent done     0h:0m:11s (0h:0m:48s left)      Finished subset 18/78     23.077  percent done     0h:0m:11s (0h:0m:47s left)      Finished subset 17/78     21.795  percent done     0h:0m:12s (0h:0m:48s left)      Finished subset 20/78     25.641  percent done     0h:0m:12s (0h:0m:48s left)      Finished subset 19/78     24.359  percent done     0h:0m:13s (0h:0m:49s left)      Finished subset 23/78     29.487  percent done     0h:0m:13s (0h:0m:48s left)      Finished subset 21/78     26.923  percent done     0h:0m:14s (0h:0m:47s left)      Finished subset 22/78     28.205  percent done     0h:0m:14s (0h:0m:45s left)      Finished subset 25/78     32.051  percent done     0h:0m:14s (0h:0m:45s left)      Finished subset 24/78     30.769  percent done     0h:0m:15s (0h:0m:45s left)      Finished subset 26/78     33.333  percent done     0h:0m:15s (0h:0m:44s left)      Finished subset 27/78     34.615  percent done     0h:0m:15s (0h:0m:44s left)      Finished subset 28/78     35.897  percent done     0h:0m:16s (0h:0m:44s left)      Finished subset 31/78     39.744  percent done     0h:0m:16s (0h:0m:44s left)      Finished subset 29/78     37.179  percent done     0h:0m:16s (0h:0m:43s left)      Finished subset 30/78     38.462  percent done     0h:0m:16s (0h:0m:41s left)      Finished subset 32/78     41.026  percent done     0h:0m:17s (0h:0m:41s left)      Finished subset 33/78     42.308  percent done     0h:0m:17s (0h:0m:40s left)      Finished subset 35/78     44.872  percent done     0h:0m:17s (0h:0m:40s left)      Finished subset 37/78     47.436  percent done     0h:0m:18s (0h:0m:40s left)      Finished subset 34/78     43.590  percent done     0h:0m:19s (0h:0m:40s left)      Finished subset 36/78     46.154  percent done     0h:0m:19s (0h:0m:39s left)      Finished subset 39/78     50.000  percent done     0h:0m:19s (0h:0m:39s left)      Finished subset 38/78     48.718  percent done     0h:0m:19s (0h:0m:38s left)      Finished subset 41/78     52.564  percent done     0h:0m:19s (0h:0m:37s left)      Finished subset 40/78     51.282  percent done     0h:0m:20s (0h:0m:38s left)      Finished subset 42/78     53.846  percent done     0h:0m:20s (0h:0m:37s left)      Finished subset 44/78     56.410  percent done     0h:0m:20s (0h:0m:36s left)      Finished subset 43/78     55.128  percent done     0h:0m:21s (0h:0m:36s left)      Finished subset 46/78     58.974  percent done     0h:0m:21s (0h:0m:35s left)      Finished subset 45/78     57.692  percent done     0h:0m:21s (0h:0m:34s left)      Finished subset 47/78     60.256  percent done     0h:0m:21s (0h:0m:33s left)      Finished subset 50/78     64.103  percent done     0h:0m:22s (0h:0m:34s left)      Finished subset 49/78     62.821  percent done     0h:0m:22s (0h:0m:33s left)      Finished subset 48/78     61.538  percent done     0h:0m:22s (0h:0m:32s left)      Finished subset 52/78     66.667  percent done     0h:0m:22s (0h:0m:32s left)      Finished subset 54/78     69.231  percent done     0h:0m:23s (0h:0m:31s left)      Finished subset 55/78     70.513  percent done     0h:0m:23s (0h:0m:31s left)      Finished subset 51/78     65.385  percent done     0h:0m:23s (0h:0m:30s left)      Finished subset 57/78     73.077  percent done     0h:0m:24s (0h:0m:30s left)      Finished subset 59/78     75.641  percent done     0h:0m:24s (0h:0m:30s left)      Finished subset 53/78     67.949  percent done     0h:0m:24s (0h:0m:29s left)      Finished subset 56/78     71.795  percent done     0h:0m:24s (0h:0m:29s left)      Finished subset 60/78     76.923  percent done     0h:0m:25s (0h:0m:28s left)      Finished subset 61/78     78.205  percent done     0h:0m:25s (0h:0m:28s left)      Finished subset 62/78     79.487  percent done     0h:0m:25s (0h:0m:27s left)      Finished subset 58/78     74.359  percent done     0h:0m:25s (0h:0m:27s left)      Finished subset 63/78     80.769  percent done     0h:0m:25s (0h:0m:26s left)      Finished subset 64/78     82.051  percent done     0h:0m:25s (0h:0m:26s left)      Finished subset 65/78     83.333  percent done     0h:0m:26s (0h:0m:25s left)      Finished subset 66/78     84.615  percent done     0h:0m:26s (0h:0m:25s left)      Finished subset 67/78     85.897  percent done     0h:0m:26s (0h:0m:24s left)      Finished subset 68/78     87.179  percent done     0h:0m:26s (0h:0m:24s left)      Finished subset 69/78     88.462  percent done     0h:0m:26s (0h:0m:23s left)      Finished subset 72/78     92.308  percent done     0h:0m:26s (0h:0m:23s left)      Finished subset 70/78     89.744  percent done     0h:0m:27s (0h:0m:22s left)      Finished subset 73/78     93.590  percent done     0h:0m:27s (0h:0m:22s left)      Finished subset 76/78     97.436  percent done     0h:0m:27s (0h:0m:21s left)      Finished subset 71/78     91.026  percent done     0h:0m:27s (0h:0m:21s left)      Finished subset 75/78     96.154  percent done     0h:0m:27s (0h:0m:21s left)      Finished subset 77/78     98.718  percent done     0h:0m:27s (0h:0m:20s left)      Finished subset 74/78     94.872  percent done     0h:0m:27s (0h:0m:20s left)                                                                                     6 compatible better partition pairs found
+ModelFinder2	Fast Relaxed Algorithm	Step 1	78 Subsets	BIC 290294.557	deltaBIC -5243.150
+ Finished subset 6/21     28.571  percent done     0h:0m:31s (0h:0m:21s left)      Finished subset 3/21     14.286  percent done     0h:0m:31s (0h:0m:21s left)      Finished subset 2/21     9.524  percent done     0h:0m:31s (0h:0m:21s left)      Finished subset 1/21     4.762  percent done     0h:0m:31s (0h:0m:20s left)      Finished subset 5/21     23.810  percent done     0h:0m:31s (0h:0m:20s left)      Finished subset 0/21     0.000  percent done     0h:0m:32s (0h:0m:19s left)      Finished subset 9/21     42.857  percent done     0h:0m:33s (0h:0m:20s left)      Finished subset 4/21     19.048  percent done     0h:0m:34s (0h:0m:20s left)      Finished subset 8/21     38.095  percent done     0h:0m:34s (0h:0m:19s left)      Finished subset 11/21     52.381  percent done     0h:0m:35s (0h:0m:19s left)      Finished subset 12/21     57.143  percent done     0h:0m:36s (0h:0m:19s left)      Finished subset 7/21     33.333  percent done     0h:0m:37s (0h:0m:19s left)      Finished subset 10/21     47.619  percent done     0h:0m:37s (0h:0m:19s left)      Finished subset 14/21     66.667  percent done     0h:0m:38s (0h:0m:18s left)      Finished subset 13/21     61.905  percent done     0h:0m:39s (0h:0m:19s left)      Finished subset 16/21     76.190  percent done     0h:0m:40s (0h:0m:18s left)      Finished subset 15/21     71.429  percent done     0h:0m:40s (0h:0m:18s left)      Finished subset 17/21     80.952  percent done     0h:0m:40s (0h:0m:17s left)      Finished subset 18/21     85.714  percent done     0h:0m:41s (0h:0m:17s left)      Finished subset 20/21     95.238  percent done     0h:0m:41s (0h:0m:17s left)      Finished subset 19/21     90.476  percent done     0h:0m:44s (0h:0m:17s left)                                                                                     3 compatible better partition pairs found
+ModelFinder2	Fast Relaxed Algorithm	Step 2	21 Subsets	BIC 288026.232	deltaBIC -2268.325
+ Finished subset 1/6     16.667  percent done     0h:0m:51s (0h:0m:19s left)      Finished subset 5/6     83.333  percent done     0h:0m:51s (0h:0m:19s left)      Finished subset 3/6     50.000  percent done     0h:0m:51s (0h:0m:18s left)      Finished subset 2/6     33.333  percent done     0h:0m:53s (0h:0m:18s left)      Finished subset 0/6     0.000  percent done     0h:0m:54s (0h:0m:18s left)      Finished subset 4/6     66.667  percent done     0h:0m:55s (0h:0m:18s left)                                                                                     ModelFinder2	Fast Relaxed Algorithm	Step 3	6 Subsets	BIC 287243.501	deltaBIC -782.731
+ Finished subset 2/3     66.667  percent done     0h:1m:8s (0h:0m:21s left)      Finished subset 0/3     0.000  percent done     0h:1m:10s (0h:0m:21s left)                                                                                     ModelFinder2	Fast Relaxed Algorithm	Step 4	2 Subsets	BIC 287243.501	deltaBIC 0.000
+Merging into 3 partitions...
+
+No. Model        Score       Charset
+   1 mtVer+F+R6   194808.895  p1_aln_aa_ATP6+p2_aln_aa_ATP8+p7_aln_aa_NADH1+p8_aln_aa_NADH2+p9_aln_aa_NADH3+p10_aln_aa_NADH4+p11_aln_aa_NADH4L+p12_aln_aa_NADH5	0h:12m:4s (0h:3m:35s left)
+WARNING: Log-likelihood -32776.5 of mtREV+R7 worse than mtREV+R6 -32762.2
+   2 mtVer+I+R5   66116.597   p3_aln_aa_COX1+p4_aln_aa_COX2+p5_aln_aa_COX3+p6_aln_aa_CYTB	0h:16m:1s (0h:4m:35s left)
+WARNING: Log-likelihood -10034.5 of mtMet+R6 worse than mtMet+R5 -10033.4
+WARNING: Log-likelihood -10317.5 of mtVer+R6 worse than mtVer+R5 -10316.4
+WARNING: Log-likelihood -9993.16 of mtInv+R6 worse than mtInv+R5 -9992.09
+   3 mtVer+F+R5   19584.273   p13_aln_aa_NADH6	0h:18m:54s (0h:5m:13s left)
+Best partition model BIC score: 281127.870 (LnL: -138917.338  df:398)
+Partition information was printed to amino_tree.best_scheme.nex
+Partition information in Raxml format was printed to amino_tree.best_scheme
+
+All model information printed to amino_tree.model.gz
+CPU time for ModelFinder: 7694.176 seconds (2h:8m:14s)
+Wall-clock time for ModelFinder: 1372.688 seconds (0h:22m:52s)
+Generating 1000 samples for ultrafast bootstrap (seed: 90632)...
+
+NOTE: 171 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Partition p1_aln_aa_ATP6+p2_aln_aa_ATP8+p7_aln_aa_NADH1+p8_aln_aa_NADH2+p9_aln_aa_NADH3+p10_aln_aa_NADH4+p11_aln_aa_NADH4L+p12_aln_aa_NADH5 / Model: mtVer+F+R6 / df: 140 / LogL: -96863.384
+Partition p3_aln_aa_COX1+p4_aln_aa_COX2+p5_aln_aa_COX3+p6_aln_aa_CYTB / Model: mtVer+I+R5 / df: 120 / LogL: -32620.768
+Partition p13_aln_aa_NADH6 / Model: mtVer+F+R5 / df: 138 / LogL: -9432.013
+Optimal log-likelihood: -138916.165
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 9.9251e-05 secs using 920.9% CPU
+Computing ML distances took 0.000189 sec (of wall-clock time) 0.001005 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000616212 secs using 390.1% CPU
+Constructing RapidNJ tree: done in 0.0330962 secs using 269.9% CPU
+Computing RapidNJ tree took 0.033827 sec (of wall-clock time) 0.092111 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -203550.083
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 6.576 second
+Computing log-likelihood of 98 initial trees ... 43.511 seconds
+Current best score: -138916.165
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 2.42054 secs using 602.8% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -138913.188
+Optimizing NNI: done in 4.36318 secs using 586.8% CPU
+Optimizing NNI: done in 4.78396 secs using 587.5% CPU
+Optimizing NNI: done in 6.60107 secs using 574% CPU
+Optimizing NNI: done in 7.59993 secs using 554.4% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -138890.748
+Optimizing NNI: done in 5.66629 secs using 587.1% CPU
+Optimizing NNI: done in 6.32001 secs using 588.5% CPU
+Optimizing NNI: done in 6.03002 secs using 590.4% CPU
+Optimizing NNI: done in 4.85744 secs using 578.1% CPU
+Optimizing NNI: done in 7.04272 secs using 574.1% CPU
+Iteration 10 / LogL: -138915.858 / Time: 0h:2m:37s
+Optimizing NNI: done in 4.86754 secs using 572.9% CPU
+Optimizing NNI: done in 6.19177 secs using 586.5% CPU
+Optimizing NNI: done in 9.0552 secs using 579.6% CPU
+Optimizing NNI: done in 6.17187 secs using 566.5% CPU
+Optimizing NNI: done in 7.03956 secs using 597.5% CPU
+Optimizing NNI: done in 7.11493 secs using 589.9% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 16: -138884.032
+Optimizing NNI: done in 6.32564 secs using 593% CPU
+Optimizing NNI: done in 8.13501 secs using 576.8% CPU
+Optimizing NNI: done in 6.57426 secs using 582.7% CPU
+Optimizing NNI: done in 8.04938 secs using 590.6% CPU
+Iteration 20 / LogL: -139014.809 / Time: 0h:3m:54s
+Finish initializing candidate tree set (11)
+Current best tree score: -138884.032 / CPU time: 198.971
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 9.23718 secs using 449.2% CPU
+Optimizing NNI: done in 8.97396 secs using 444.2% CPU
+Optimizing NNI: done in 9.28332 secs using 441.2% CPU
+Optimizing NNI: done in 11.0888 secs using 454.9% CPU
+Optimizing NNI: done in 10.1517 secs using 447.3% CPU
+Optimizing NNI: done in 7.75417 secs using 438.7% CPU
+Optimizing NNI: done in 11.3886 secs using 444.3% CPU
+Optimizing NNI: done in 7.32643 secs using 441.9% CPU
+Optimizing NNI: done in 7.68461 secs using 446.7% CPU
+Optimizing NNI: done in 10.1045 secs using 461% CPU
+Iteration 30 / LogL: -138888.429 / Time: 0h:5m:28s (0h:16m:13s left)
+Optimizing NNI: done in 8.45716 secs using 458.4% CPU
+Optimizing NNI: done in 7.50879 secs using 442.9% CPU
+Optimizing NNI: done in 10.604 secs using 448.3% CPU
+Optimizing NNI: done in 11.5306 secs using 441.5% CPU
+Optimizing NNI: done in 10.6366 secs using 447.3% CPU
+Optimizing NNI: done in 10.7182 secs using 451.7% CPU
+Optimizing NNI: done in 6.76988 secs using 443.2% CPU
+Optimizing NNI: done in 9.22833 secs using 457% CPU
+Optimizing NNI: done in 7.06593 secs using 441.8% CPU
+Optimizing NNI: done in 7.42338 secs using 442.2% CPU
+Iteration 40 / LogL: -138963.266 / Time: 0h:6m:58s (0h:13m:36s left)
+Optimizing NNI: done in 9.02836 secs using 448.6% CPU
+Optimizing NNI: done in 12.003 secs using 446.9% CPU
+Optimizing NNI: done in 8.74648 secs using 446.5% CPU
+Optimizing NNI: done in 8.68914 secs using 443.4% CPU
+Optimizing NNI: done in 8.41847 secs using 445.4% CPU
+Optimizing NNI: done in 6.98925 secs using 438.3% CPU
+Optimizing NNI: done in 10.5705 secs using 449.6% CPU
+Optimizing NNI: done in 7.53384 secs using 435.4% CPU
+Optimizing NNI: done in 7.49188 secs using 439.6% CPU
+Optimizing NNI: done in 10.974 secs using 445.9% CPU
+Iteration 50 / LogL: -138912.522 / Time: 0h:8m:29s (0h:11m:26s left)
+Log-likelihood cutoff on original alignment: -138962.806
+Optimizing NNI: done in 9.9606 secs using 448.1% CPU
+Optimizing NNI: done in 9.72204 secs using 455.2% CPU
+Optimizing NNI: done in 9.87452 secs using 447.7% CPU
+Optimizing NNI: done in 10.0112 secs using 462.6% CPU
+Optimizing NNI: done in 11.2958 secs using 456.8% CPU
+Optimizing NNI: done in 8.70595 secs using 444.9% CPU
+Optimizing NNI: done in 10.462 secs using 450.4% CPU
+Optimizing NNI: done in 10.3624 secs using 453.3% CPU
+Optimizing NNI: done in 8.62821 secs using 449.5% CPU
+Optimizing NNI: done in 13.4809 secs using 467.3% CPU
+Iteration 60 / LogL: -138892.496 / Time: 0h:10m:12s (0h:9m:41s left)
+Optimizing NNI: done in 8.60461 secs using 445.9% CPU
+Optimizing NNI: done in 10.698 secs using 454% CPU
+Optimizing NNI: done in 9.08762 secs using 446% CPU
+Optimizing NNI: done in 7.6919 secs using 443.7% CPU
+Optimizing NNI: done in 9.95713 secs using 438.3% CPU
+Optimizing NNI: done in 6.76252 secs using 442.4% CPU
+Optimizing NNI: done in 8.2679 secs using 437.6% CPU
+Optimizing NNI: done in 8.17439 secs using 449.5% CPU
+Optimizing NNI: done in 10.5864 secs using 446.7% CPU
+Optimizing NNI: done in 10.8492 secs using 454.8% CPU
+Iteration 70 / LogL: -138894.554 / Time: 0h:11m:44s (0h:7m:49s left)
+Optimizing NNI: done in 10.051 secs using 451.2% CPU
+Optimizing NNI: done in 7.51456 secs using 440% CPU
+Optimizing NNI: done in 8.60613 secs using 442.5% CPU
+Optimizing NNI: done in 9.39971 secs using 452.5% CPU
+Optimizing NNI: done in 7.69129 secs using 436.4% CPU
+Optimizing NNI: done in 8.86344 secs using 446.2% CPU
+Optimizing NNI: done in 6.78547 secs using 443.2% CPU
+Optimizing NNI: done in 8.63709 secs using 458.2% CPU
+Optimizing NNI: done in 7.55321 secs using 437% CPU
+Optimizing NNI: done in 9.45295 secs using 437.5% CPU
+Iteration 80 / LogL: -138952.094 / Time: 0h:13m:9s (0h:5m:59s left)
+Optimizing NNI: done in 9.27818 secs using 450.8% CPU
+Optimizing NNI: done in 9.5133 secs using 443% CPU
+Optimizing NNI: done in 9.56765 secs using 443.8% CPU
+Optimizing NNI: done in 7.49494 secs using 446.4% CPU
+Optimizing NNI: done in 7.63841 secs using 445.7% CPU
+Optimizing NNI: done in 10.7316 secs using 456.8% CPU
+Optimizing NNI: done in 7.30206 secs using 446.3% CPU
+Optimizing NNI: done in 8.60727 secs using 443.8% CPU
+Optimizing NNI: done in 9.11715 secs using 442.6% CPU
+Optimizing NNI: done in 8.67206 secs using 440% CPU
+Iteration 90 / LogL: -138920.626 / Time: 0h:14m:37s (0h:4m:16s left)
+Optimizing NNI: done in 7.08963 secs using 438% CPU
+Optimizing NNI: done in 6.9326 secs using 439% CPU
+Optimizing NNI: done in 8.13409 secs using 446.1% CPU
+Optimizing NNI: done in 10.0557 secs using 450.9% CPU
+Optimizing NNI: done in 7.34932 secs using 448.6% CPU
+Optimizing NNI: done in 8.94056 secs using 448.5% CPU
+Optimizing NNI: done in 7.02841 secs using 442.8% CPU
+Optimizing NNI: done in 8.46431 secs using 453.3% CPU
+Optimizing NNI: done in 8.1894 secs using 445.2% CPU
+Optimizing NNI: done in 6.80193 secs using 443.6% CPU
+Iteration 100 / LogL: -138947.479 / Time: 0h:15m:56s (0h:2m:34s left)
+Log-likelihood cutoff on original alignment: -138962.806
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Optimizing NNI: done in 10.5774 secs using 450.7% CPU
+Optimizing NNI: done in 10.7511 secs using 450.4% CPU
+Optimizing NNI: done in 8.90628 secs using 443.3% CPU
+Optimizing NNI: done in 10.6783 secs using 453.2% CPU
+Optimizing NNI: done in 10.4618 secs using 453.6% CPU
+Optimizing NNI: done in 7.76796 secs using 448% CPU
+Optimizing NNI: done in 10.1203 secs using 457.6% CPU
+Optimizing NNI: done in 10.5858 secs using 455.2% CPU
+Optimizing NNI: done in 9.74717 secs using 451% CPU
+Optimizing NNI: done in 8.56192 secs using 439.9% CPU
+Iteration 110 / LogL: -138955.572 / Time: 0h:17m:35s (0h:14m:31s left)
+Optimizing NNI: done in 9.74226 secs using 448.2% CPU
+Optimizing NNI: done in 7.69941 secs using 450.4% CPU
+Optimizing NNI: done in 8.71536 secs using 451% CPU
+Optimizing NNI: done in 9.17761 secs using 447.4% CPU
+Optimizing NNI: done in 8.80238 secs using 451.2% CPU
+Optimizing NNI: done in 8.8392 secs using 445% CPU
+Optimizing NNI: done in 7.81698 secs using 450.4% CPU
+TREE SEARCH COMPLETED AFTER 117 ITERATIONS / Time: 0h:18m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Partition p1_aln_aa_ATP6+p2_aln_aa_ATP8+p7_aln_aa_NADH1+p8_aln_aa_NADH2+p9_aln_aa_NADH3+p10_aln_aa_NADH4+p11_aln_aa_NADH4L+p12_aln_aa_NADH5 / Model: mtVer+F+R6 / df: 140 / LogL: -96841.987
+Partition p3_aln_aa_COX1+p4_aln_aa_COX2+p5_aln_aa_COX3+p6_aln_aa_CYTB / Model: mtVer+I+R5 / df: 120 / LogL: -32619.393
+Partition p13_aln_aa_NADH6 / Model: mtVer+F+R5 / df: 138 / LogL: -9422.634
+Optimal log-likelihood: -138884.014
+Partition information was printed to amino_tree.best_model.nex
+BEST SCORE FOUND : -138884.014
+Creating bootstrap support values...
+Split supports printed to NEXUS file amino_tree.splits.nex
+Total tree length: 13.722
+
+Total number of iterations: 117
+CPU time used for tree search: 5033.989 sec (1h:23m:53s)
+Wall-clock time used for tree search: 1080.946 sec (0h:18m:0s)
+Total CPU time used: 5251.194 sec (1h:27m:31s)
+Total wall-clock time used: 1119.304 sec (0h:18m:39s)
+
+Computing bootstrap consensus tree...
+Reading input file amino_tree.splits.nex...
+57 taxa and 181 splits.
+Consensus tree written to amino_tree.contree
+Reading input trees file amino_tree.contree
+Log-likelihood of consensus tree: -138884.012
+
+Analysis results written to: 
+  IQ-TREE report:                amino_tree.iqtree
+  Maximum-likelihood tree:       amino_tree.treefile
+  Partition trees:               amino_tree.parttrees
+  Likelihood distances:          amino_tree.mldist
+  Best partitioning scheme:      amino_tree.best_scheme.nex
+           in RAxML format:      amino_tree.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          amino_tree.splits.nex
+  Consensus tree:                amino_tree.contree
+  Screen log file:               amino_tree.log
+
+Date and Time: Sat Dec 23 23:12:21 2023

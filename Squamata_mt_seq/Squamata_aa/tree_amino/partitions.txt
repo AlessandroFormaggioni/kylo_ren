@@ -1,0 +1,17 @@
+#NEXUS
+
+Begin sets;
+	charset p1_aln_aa_ATP6 = 1-227;
+	charset p2_aln_aa_ATP8 = 228-284;
+	charset p3_aln_aa_COX1 = 285-873;
+	charset p4_aln_aa_COX2 = 874-1105;
+	charset p5_aln_aa_COX3 = 1106-1366;
+	charset p6_aln_aa_CYTB = 1367-1750;
+	charset p7_aln_aa_NADH1 = 1751-2076;
+	charset p8_aln_aa_NADH2 = 2077-2426;
+	charset p9_aln_aa_NADH3 = 2427-2549;
+	charset p10_aln_aa_NADH4 = 2550-3025;
+	charset p11_aln_aa_NADH4L = 3026-3123;
+	charset p12_aln_aa_NADH5 = 3124-3740;
+	charset p13_aln_aa_NADH6 = 3741-3922;
+End;
